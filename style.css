@@ -35,3 +35,24 @@
   --switch-color: var(--primary-inverse);
   --switch-checked-background-color: var(--primary);
 }
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}

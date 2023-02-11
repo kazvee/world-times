@@ -60,6 +60,7 @@ document.querySelector('#app').innerHTML = `
                 <div id="Tel-Aviv"></div>
             </article>
         </div>
-</body>
+
 </main>
+</body>
 `;

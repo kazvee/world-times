@@ -1,3 +1,13 @@
+let cityIds = [
+  'Calgary',
+  'New York',
+  'Reykjavík',
+  'Dublin',
+  'Berlin',
+  'Tel-Aviv',
+];
+let offsets = [-7, -5, 0, 0, 1, 2];
+
 function displayTime(id, offset) {
   // Create a new date object and set it to UTC time
   let date = new Date();
@@ -24,10 +34,7 @@ function displayTime(id, offset) {
 
 // Call the displayTime function every second to update the clocks
 setInterval(function () {
-  displayTime('Calgary', -7);
-  displayTime('New York', -5);
-  displayTime('Reykjavík', +0);
-  displayTime('Dublin', +0);
-  displayTime('Berlin', +1);
-  displayTime('Tel-Aviv', +2);
+  for (let i = 0; i < cityIds.length; i++) {
+    displayTime(cityIds[i], offsets[i]);
+  }
 }, 1000);

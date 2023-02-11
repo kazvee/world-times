@@ -1,23 +1,59 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
+import '@picocss/pico';
+import './style.css';
+import './clock.js';
 
 document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+<main class="container">
+<nav>
+  <ul>
+    <li><strong>World Clock</strong></li>
+  </ul>
+ </nav>
 
-setupCounter(document.querySelector('#counter'))
+<div class="grid">
+  <div>
+    <article>
+    <header>Calgary</header>
+      <div id="Calgary"></div>
+    </article>
+  </div>
+
+  <div>
+    <article>
+    <header>New York</header>
+      <div id="New York"></div>
+    </article>
+  </div>
+
+  <div>
+    <article>
+    <header>Reykjavík</header>
+      <div id="Reykjavík"></div>
+    </article>
+  </div>
+
+  <div>
+    <article>
+    <header>Dublin</header>
+      <div id="Dublin"></div>
+    </article>
+  </div>
+
+  <div>
+    <article>
+    <header>Berlin</header>
+      <div id="Berlin"></div>
+    </article>
+  </div>
+
+  <div>
+    <article>
+    <header>Tel-Aviv</header>
+      <div id="Tel-Aviv"></div>
+    </article>
+  </div>
+
+  </div>
+
+  </main>
+`;

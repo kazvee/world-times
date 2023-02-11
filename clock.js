@@ -1,11 +1,10 @@
-// Function to display the current time in a specific time zone
 function displayTime(id, offset) {
-  // Create a new date object
+  // Create a new date object and set it to UTC time
   let date = new Date();
+  date.setTime(date.getTime() + date.getTimezoneOffset() * 60 * 1000);
 
   // Calculate the time in the specific time zone
   let time = date.getTime();
-  time += date.getTimezoneOffset() * 60 * 1000;
   time += offset * 60 * 60 * 1000;
   date.setTime(time);
 
@@ -15,7 +14,6 @@ function displayTime(id, offset) {
     hour: '2-digit',
     minute: '2-digit',
     second: '2-digit',
-    timeZone: 'UTC',
     hour12: false,
   });
   clock.innerHTML = timeString;

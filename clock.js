@@ -10,13 +10,16 @@ function displayTime(id, offset) {
 
   // Get the clock element and set its inner HTML to the current time in the specific time zone
   let clock = document.getElementById(id);
+  let hour = date.getHours();
+  let hourString = hour < 10 ? '0' + hour : hour;
+  hourString = hour === 24 ? '00' : hourString;
   let timeString = date.toLocaleTimeString('en-CA', {
     hour: '2-digit',
     minute: '2-digit',
     second: '2-digit',
     hour12: false,
   });
-  clock.innerHTML = timeString;
+  clock.innerHTML = hourString + timeString.substr(2);
 }
 
 // Call the displayTime function every second to update the clocks

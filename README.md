@@ -43,7 +43,7 @@ To get a local copy up and running, follow the steps below.
 
 ## Usage
 
-Can view the local time for a few selected cities, across the world.
+Can view the local time for a few selected cities across the world.
 
 ## Acknowledgements
 

@@ -24,18 +24,22 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 - npm
-  `npm install npm@latest -g`
+
+`npm install npm@latest -g`
 
 ### Prerequisites
 
 - Install NPM packages
-  `npm install`
+
+`npm install`
 
 - Run on local development server
-  `npm run dev`
+
+`npm run dev`
 
 - Deploy production build
-  `npm run build`
+
+`npm run build`
 
 ## Usage
 

@@ -1,4 +1,4 @@
-## Table Of Contents
+## Table of Contents
 
 - [About the Project](#about-the-project)
 - [Built With](#built-with)
@@ -8,7 +8,7 @@
 - [Usage](#usage)
 - [Acknowledgements](#acknowledgements)
 
-## About The Project
+## About the Project
 
 A simple "world clock" containing a few selected cities.
 
@@ -27,7 +27,7 @@ To get a local copy up and running, follow the steps below.
 
 `npm install npm@latest -g`
 
-### Prerequisites
+### Installation
 
 - Install NPM packages
 

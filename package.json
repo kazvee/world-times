@@ -12,6 +12,7 @@
     "vite": "^4.1.0"
   },
   "dependencies": {
-    "@picocss/pico": "^1.5.7"
+    "@picocss/pico": "^1.5.7",
+    "flag-icons": "^6.6.6"
   }
 }

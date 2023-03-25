@@ -1,40 +1,26 @@
-let cityIds = [
-  'Calgary',
-  'New York',
-  'Reykjavík',
-  'Dublin',
-  'Berlin',
-  'Tel-Aviv',
+import { DateTime } from 'luxon';
+
+let cities = [
+  { name: 'Calgary', zone: 'America/Edmonton' },
+  { name: 'New York', zone: 'America/New_York' },
+  { name: 'Reykjavík', zone: 'Atlantic/Reykjavik' },
+  { name: 'Dublin', zone: 'Europe/Dublin' },
+  { name: 'Berlin', zone: 'Europe/Berlin' },
+  { name: 'Tel-Aviv', zone: 'Asia/Jerusalem' },
 ];
-let offsets = [-7, -5, 0, 0, 1, 2];
 
-function displayTime(id, offset) {
-  // Create a new date object and set it to UTC time
-  let date = new Date();
-  date.setTime(date.getTime() + date.getTimezoneOffset() * 60 * 1000);
+function displayTime(city) {
+  const now = DateTime.now().setZone(city.zone);
 
-  // Calculate the time in the specific time zone
-  let time = date.getTime();
-  time += offset * 60 * 60 * 1000;
-  date.setTime(time);
+  const hourString = now.toFormat('HH');
+  const timeString = now.toFormat(':mm:ss');
 
-  // Get the clock element and set its inner HTML to the current time in the specific time zone
-  let clock = document.getElementById(id);
-  let hour = date.getHours();
-  let hourString = hour < 10 ? '0' + hour : hour;
-  hourString = hour === 24 ? '00' : hourString;
-  let timeString = date.toLocaleTimeString('en-CA', {
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    hour12: false,
-  });
-  clock.innerHTML = hourString + timeString.substr(2);
+  const clock = document.getElementById(city.name);
+  clock.innerHTML = hourString + timeString;
 }
 
-// Call the displayTime function every second to update the clocks
-setInterval(function () {
-  for (let i = 0; i < cityIds.length; i++) {
-    displayTime(cityIds[i], offsets[i]);
+setInterval(() => {
+  for (const city of cities) {
+    displayTime(city);
   }
 }, 1000);

@@ -1,53 +1,40 @@
-## Table of Contents
+# World Times
 
-- [About the Project](#about-the-project)
-- [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Acknowledgements](#acknowledgements)
+- A simple "world clock" showing the local time for a few selected cities across the globe.
 
-## About the Project
+## Live Demo
 
-A simple "world clock" containing a few selected cities.
+A demo of this app can be viewed [here](https://world-times.surge.sh/)
 
 ## Built With
 
 - [Vite](https://vitejs.dev/)
 - [Pico.css](https://picocss.com/)
 
-## Getting Started
+## Installation
 
-To get a local copy up and running, follow the steps below.
+To get a local copy up and running, follow the steps below:
 
-### Prerequisites
+- Install NPM
 
-- npm
-
-`npm install npm@latest -g`
-
-### Installation
+  `npm install npm@latest -g`
 
 - Install NPM packages
 
-`npm install`
+  `npm install`
 
 - Run on local development server
 
-`npm run dev`
+  `npm run dev`
 
 - Deploy production build
 
-`npm run build`
+  `npm run build`
 
 By default, the build output will be placed at dist. Deploy the dist folder to your preferred platform.
-
-## Usage
-
-Can view the local time for a few selected cities across the world.
 
 ## Acknowledgements
 
 - Date & Time library: [Luxon](https://www.npmjs.com/package/luxon)
 - Flag icons: [flag-icons](https://www.npmjs.com/package/flag-icons)
+- [Earth Globe](https://icons8.com/icon/111459/earth-globe) favicon by [Icons8](https://icons8.com/)

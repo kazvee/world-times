@@ -17,12 +17,7 @@ function displayTime(city) {
   const secondString = now.toFormat(':ss');
 
   const clock = document.getElementById(city.name);
-  clock.innerHTML =
-    hourString +
-    minuteString +
-    '<span class="blink">' +
-    secondString +
-    '</span>';
+  clock.innerHTML = hourString + minuteString + secondString;
 }
 
 setInterval(() => {

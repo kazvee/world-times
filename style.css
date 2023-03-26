@@ -57,21 +57,6 @@ body {
   flex-grow: 1;
 }
 
-.blink {
-  animation: blink 1s linear infinite;
-}
-
-@keyframes blink {
-  0%,
-  50% {
-    opacity: 0;
-  }
-  51%,
-  100% {
-    opacity: 1;
-  }
-}
-
 .pagefooter {
   position: fixed;
   left: 0;

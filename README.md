@@ -15,7 +15,7 @@ A simple "world clock" containing a few selected cities.
 ## Built With
 
 - [Vite](https://vitejs.dev/)
-- [Pico](https://picocss.com/)
+- [Pico.css](https://picocss.com/)
 
 ## Getting Started
 
@@ -41,10 +41,13 @@ To get a local copy up and running, follow the steps below.
 
 `npm run build`
 
+By default, the build output will be placed at dist. Deploy the dist folder to your preferred platform.
+
 ## Usage
 
 Can view the local time for a few selected cities across the world.
 
 ## Acknowledgements
 
-- [Flag icons from flag-icons](https://github.com/lipis/flag-icons)
+- Date & Time library: [Luxon](https://www.npmjs.com/package/luxon)
+- Flag icons: [flag-icons](https://www.npmjs.com/package/flag-icons)

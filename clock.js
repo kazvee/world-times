@@ -13,10 +13,16 @@ function displayTime(city) {
   const now = DateTime.now().setZone(city.zone);
 
   const hourString = now.toFormat('HH');
-  const timeString = now.toFormat(':mm:ss');
+  const minuteString = now.toFormat(':mm');
+  const secondString = now.toFormat(':ss');
 
   const clock = document.getElementById(city.name);
-  clock.innerHTML = hourString + timeString;
+  clock.innerHTML =
+    hourString +
+    minuteString +
+    '<span class="blink">' +
+    secondString +
+    '</span>';
 }
 
 setInterval(() => {

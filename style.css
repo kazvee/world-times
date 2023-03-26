@@ -56,3 +56,48 @@ body {
 .flex-grow-1 {
   flex-grow: 1;
 }
+
+.blink {
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 50;
+  }
+
+  11% {
+    opacity: 75;
+  }
+
+  20% {
+    opacity: 80;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  89% {
+    opacity: 75;
+  }
+
+  99% {
+    opacity: 50;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.pagefooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

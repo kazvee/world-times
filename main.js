@@ -65,5 +65,8 @@ document.querySelector('#app').innerHTML = `
             </article>
         </div>
     </main>
+    <footer class="pagefooter">
+      <small><a target="_blank" href="https://icons8.com/icon/111459/earth-globe">Earth Globe</a> favicon by <a target="_blank" href="https://icons8.com">Icons8</a></small>
+    </footer>
 </body>
 `;

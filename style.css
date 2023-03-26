@@ -58,39 +58,17 @@ body {
 }
 
 .blink {
-  animation: blink 1s steps(1) infinite;
+  animation: blink 1s linear infinite;
 }
 
 @keyframes blink {
-  0% {
+  0%,
+  50% {
     opacity: 0;
   }
-  1% {
-    opacity: 50;
-  }
-
-  11% {
-    opacity: 75;
-  }
-
-  20% {
-    opacity: 80;
-  }
-
-  25% {
-    opacity: 1;
-  }
-
-  89% {
-    opacity: 75;
-  }
-
-  99% {
-    opacity: 50;
-  }
-
+  51%,
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 

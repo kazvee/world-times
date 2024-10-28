@@ -66,7 +66,9 @@ document.querySelector('#app').innerHTML = `
         </div>
     </main>
     <footer class="pagefooter">
-      <small><a target="_blank" href="https://icons8.com/icon/111459/earth-globe">Earth Globe</a> favicon by <a target="_blank" href="https://icons8.com">Icons8</a></small>
-    </footer>
+  <small>
+    Made with <a target="_blank" href="https://github.com/kazvee/world-times#readme">❤️</span></a>
+  </small>
+</footer>
 </body>
 `;
